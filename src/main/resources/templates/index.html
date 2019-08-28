@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="All Rights Reserved, Copyright (C) 2013, Wuyeguo, Ltd." />
+<title>EasyUI Web Admin Power by Wuyeguo</title>
+<link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="css/wu.css" />
+<link rel="stylesheet" type="text/css" href="css/icon.css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body class="easyui-layout">
+	<!-- begin of header -->
+	<div class="wu-header" data-options="region:'north',border:false,split:true">
+    	<div class="wu-header-left">
+        	<h1>姿轨控发动机数据包管理系统</h1>
+        </div>
+        <div class="wu-header-right">
+        	<p><strong class="easyui-tooltip" title="2条未读消息">帅气wkx</strong>，欢迎您！</p>
+            <p><a href="#">网站首页</a>|<a href="#">友情链接</a>|<a href="#">帮助中心</a>|<a href="#">安全退出</a></p>
+        </div>
+    </div>
+    <!-- end of header -->
+    <!-- begin of sidebar -->
+	<div class="wu-sidebar" data-options="region:'west',split:true,border:true,title:'导航菜单'">
+    	<div class="easyui-accordion" data-options="border:false,fit:true"> 
+        	<div title="系统" data-options="iconCls:'icon-application-cascade'" style="padding:5px;">
+    			<ul class="easyui-tree wu-side-tree" id="sysTree">
+                    <li iconCls="icon-cog">
+                        <span>NWPU-1动力系统</span>
+                        <ul>
+                            <li><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/system-introduce.html" iframe="0">系统简介</a></li>
+                            <li iconCls="icon-cog">
+                                <span>NWPU-001</span>
+                                <ul>
+                                    <li><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/product-introduce.html" iframe="0">产品简介</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/assemble-form.html" iframe="0">组合件配套表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">数据包项目清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">发动机总体设计关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">设计关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">工艺关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">过程控制关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">关键原材料“包络性”统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">锁紧螺母检查数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">元器件选用情况清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">发动机系统功能性能数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">部（组）件功能性能数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">生产过程多媒体记录表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">输入输出接口数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">超差情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">代料情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">焊缝质量情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">禁限用工艺落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">强制检验点检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">拧紧力矩检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">产品多余物控制措施落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">不合格品审理及措施落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">验收试验履历、试验条件、试验结果及多媒体记录表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">地面保障设备和软件产品清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">“九新”检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">外包产品验收检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">质量问题归零汇总表</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                	<li iconCls="icon-chart-organisation">
+                        <span>NWPU-2动力系统</span>
+                        <ul>
+                            <li iconCls="icon-cog">
+                                <span>NWPU-001</span>
+                                <ul>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/assemble-form.html" iframe="0">组合件配套表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">数据包项目清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">发动机总体设计关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">设计关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">工艺关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">过程控制关键特性表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">关键原材料“包络性”统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">锁紧螺母检查数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">元器件选用情况清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">发动机系统功能性能数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">部（组）件功能性能数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">生产过程多媒体记录表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">输入输出接口数据表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">超差情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">代料情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">焊缝质量情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">禁限用工艺落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">强制检验点检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">拧紧力矩检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">产品多余物控制措施落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">不合格品审理及措施落实情况统计表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">验收试验履历、试验条件、试验结果及多媒体记录表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">地面保障设备和软件产品清单</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">“九新”检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">外包产品验收检查确认表</a></li>
+                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">质量问题归零汇总表</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div title="组件" data-options="iconCls:'icon-application-form-edit'" style="padding:5px;">
+    			<ul class="easyui-tree wu-side-tree" id="comTree">
+                	<li iconCls="icon-chart-organisation">
+                        <span>推力室TSD102-100-2/0-0</span>
+                        <ul>
+                            <li iconCls="icon-cog">
+                                <span>TSD102-100-2/0-0</span>
+                                <ul class="easyui-tree">
+                                    <li iconCls="icon-cog">
+                                        <span>118001</span>
+                                            <ul class="easyui-tree">
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">单机产品数据包项目清单</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">设计关键特性表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">工艺关键特性表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">过程控制关键特性表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">关键原材料包络性统计表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">超差、代料单处理及落实情况表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">拧紧力矩检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">生产过程、对外接口多媒体记录检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">禁限用工艺检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">对外接口及外观检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">强制检验点检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">“九新”检查确认表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">质量问题归零汇总表</a></li>
+                                                <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">外包产品验收检查确认表</a></li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li iconCls="icon-users">
+                        <span>高压气瓶TSD102-100-2/0-0</span>
+                        <ul>
+                            <li iconCls="icon-cog">
+                                <span>TSD102-100-2/0-0</span>
+                                <ul class="easyui-tree">
+                                    <li iconCls="icon-cog">
+                                        <span>118001</span>
+                                        <ul>
+                                            <li iconCls="icon-cog">
+                                                <span>NWPU-1动力系统</span>
+                                                <ul class="easyui-tree">
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">单机产品数据包项目清单</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">设计关键特性表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">工艺关键特性表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">过程控制关键特性表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">关键原材料包络性统计表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">超差、代料单处理及落实情况表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">拧紧力矩检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">生产过程、对外接口多媒体记录检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">禁限用工艺检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">对外接口及外观检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">强制检验点检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">“九新”检查确认表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">质量问题归零汇总表</a></li>
+                                                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-2.html" iframe="0">外包产品验收检查确认表</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                    <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-application-osx-error"><a href="javascript:void(0)" data-icon="icon-application-osx-error" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                </ul>
+            </div>
+            <div title="报表中心" data-options="iconCls:'icon-chart-curve'" style="padding:5px;">  	
+    			<ul class="easyui-tree wu-side-tree" id="tt">
+                	<!--<li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                    <!--<li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                    <!--<li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                    <!--<li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                    <!--<li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                    <!--<li iconCls="icon-application-osx-error"><a href="javascript:void(0)" data-icon="icon-application-osx-error" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>-->
+                </ul>
+            </div>
+            <div title="系统设置" data-options="iconCls:'icon-wrench'" style="padding:5px;">  	
+    			<ul class="easyui-tree wu-side-tree">
+                	<li iconCls="icon-chart-organisation"><a href="javascript:void(0)" data-icon="icon-chart-organisation" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-users"><a href="javascript:void(0)" data-icon="icon-users" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-user-group"><a href="javascript:void(0)" data-icon="icon-user-group" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-book"><a href="javascript:void(0)" data-icon="icon-book" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-cog"><a href="javascript:void(0)" data-icon="icon-cog" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                    <li iconCls="icon-application-osx-error"><a href="javascript:void(0)" data-icon="icon-application-osx-error" data-link="pages/layout-3.html" iframe="0">导航标题</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>	
+    <!-- end of sidebar -->    
+    <!-- begin of main -->
+    <div class="wu-main" data-options="region:'center'">
+        <div id="wu-tabs" class="easyui-tabs" data-options="border:false,fit:true">  
+            <div title="首页" data-options="href:'pages/welcome.html',closable:false,iconCls:'icon-tip',cls:'pd3'">
+
+            </div>
+        </div>
+    </div>
+    <!-- end of main --> 
+    <!-- begin of footer -->
+	<div class="wu-footer" data-options="region:'south',border:true,split:true">
+    	&copy; 2019 wkx All Rights Reserved
+    </div>
+    <!-- end of footer -->  
+
+</body>
+</html>

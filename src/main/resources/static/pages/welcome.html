@@ -1,0 +1,101 @@
+<h2>欢迎使用</h2>
+<p>这是一个引导页面</p>
+<div style="margin:20px 0 10px 0;">
+    <a href="#" class="easyui-linkbutton" onclick="openNewSys()">添加新系统</a>
+    <a href="#" class="easyui-linkbutton" onclick="openNewCom()">添加新组件</a>
+</div>
+<div id="pp1">
+    <div id="p1" class="easyui-panel" title="基本信息" style="width:500px;height:400px;padding:10px;"
+         data-options="
+				tools:[{
+					iconCls:'icon-reload',
+					handler:function(){
+						$('#p').panel('refresh', '_content.html');
+					}
+				}]
+			">
+        <ul>
+            <li>已有系统：2个</li>
+            <li>已有组件：2个</li>
+        </ul>
+    </div>
+</div>
+
+<div id="pp2">
+    <div id="p2" class="easyui-panel" title="基本信息" style="width:500px;height:400px;padding:10px;"
+         data-options="
+				tools:[{
+					iconCls:'icon-reload',
+					handler:function(){
+						$('#p').panel('refresh', '_content.html');
+					}
+				}]
+			">
+        <div id="linechart" style="max-width:500px;height:400px"></div>
+    </div>
+</div>
+
+<div id="pp3">
+    <div id="p3" class="easyui-panel" title="基本信息" style="width:500px;height:400px;padding:10px;"
+         data-options="
+				tools:[{
+					iconCls:'icon-reload',
+					handler:function(){
+						$('#p').panel('refresh', '_content.html');
+					}
+				}]
+			">
+        <div id="pinechart" style="max-width:500px;height:400px"></div>
+    </div>
+</div>
+<!--  创建新系统的表单 -->
+<div id="newSysDlg" class="easyui-dialog" style="width:500px;height:250px;padding:10px 30px;"
+     title="创建新系统" buttons="#newSysDlgButtons" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <h2>系统信息</h2>
+    <form id="sysForm" method="post">
+        <table>
+            <tr>
+                <td>系统名:</td>
+                <td><input type="text" name="sysName" style="width:350px;"/></td>
+            </tr>
+            <tr>
+                <td>产品名:</td>
+                <td><input type="text" name="productName" style="width:350px;"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="newSysDlgButtons">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="addNewSysTree()">提交</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#newSysDlg').dialog('close')">取消</a>
+</div>
+
+<!--  创建新组件的表单 -->
+<div id="newComDlg" class="easyui-dialog" style="width:500px;height:250px;padding:10px 30px;"
+     title="创建新系统" buttons="#newComDlgButtons" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <h2>组合件信息</h2>
+    <form id="comForm" method="post">
+        <table>
+            <tr>
+                <td>组合件名:</td>
+                <td><input type="text" name="comName" style="width:350px;"/></td>
+            </tr>
+            <tr>
+                <td>组合件代号:</td>
+                <td><input type="text" name="comAlias" style="width:350px;"/></td>
+            </tr>
+            <tr>
+                <td>组合件代号编号:</td>
+                <td><input type="text" name="comNum" style="width:350px;"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="newComDlgButtons">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="addNewComTree()">提交</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#newComDlg').dialog('close')">取消</a>
+</div>
+
+
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/welcome.js"></script>

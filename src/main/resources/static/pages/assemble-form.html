@@ -1,0 +1,64 @@
+<table id="tb_assemble" title="组合件配套表" class="easyui-datagrid"
+       toolbar="#toolbar" idField="id"
+       rownumbers="true" fitColumns="true" singleSelect="true">
+    <thead>
+    <tr>
+        <th field="pkId" hidden="true">ID</th>
+        <th field="name" width="50">名称</th>
+        <th field="alias" width="50">代号</th>
+        <th field="amount" width="50">数量（台）</th>
+        <th field="productCode" width="50">产品编号</th>
+        <th field="remark" width="50">备注</th>
+        <th field="link" width="50">链接</th>
+    </tr>
+    </thead>
+</table>
+<div id="toolbar">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newAssemble()">添加</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editAssemble()">编辑</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyAssemble()">移除</a>
+    <div class="wu-toolbar-search">
+        <select class="easyui-combobox" panelHeight="auto" style="width:100px">
+            <option value="0">选择组件</option>
+            <option value="1">推力室</option>
+            <option value="2">电磁阀</option>
+            <option value="3">高压气瓶</option>
+        </select>
+        <label>关键词：</label><input class="wu-text" style="width:100px">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-search">开始检索</a>
+    </div>
+</div>
+
+<div id="assembleDlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
+     closed="true" buttons="#dlg-buttons">
+    <div class="ftitle">组合件信息</div>
+    <form id="assembleForm" method="post">
+        <input name="pkId" type="hidden">
+        <div class="fitem">
+            <label>名称</label>
+            <input name="name" class="easyui-validatebox" required="true">
+        </div>
+        <div class="fitem">
+            <label>代号</label>
+            <input name="alias" class="easyui-validatebox" required="true">
+        </div>
+        <div class="fitem">
+            <label>产品编号</label>
+            <input name="productCode" class="easyui-validatebox" required="true">
+        </div>
+        <div class="fitem">
+            <label>备注</label>
+            <input name="remark" class="easyui-validatebox" required="true">
+        </div>
+        <div class="fitem">
+            <label>链接</label>
+            <input name="link" class="easyui-validatebox" required="true">
+        </div>
+    </form>
+</div>
+<div id="dlg-buttons">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveAssemble()">保存</a>
+    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#assembleDlg').dialog('close')">取消</a>
+</div>
+
+<script type="text/javascript" src="js/assemble-form.js"></script>
